@@ -2919,24 +2919,6 @@ Webflow.define('forms', module.exports = function ($, _) {
     }
   };
 
-  function init() {
-    siteId = $('html').attr('data-wf-site');
-    formUrl = "https://webflow.com" + '/api/v1/form/' + siteId; // Work around same-protocol IE XDR limitation - without this IE9 and below forms won't submit
-
-    if (retro && formUrl.indexOf("https://webflow.com") >= 0) {
-      formUrl = formUrl.replace("https://webflow.com", "http://formdata.webflow.com");
-    }
-
-    signFileUrl = "".concat(formUrl, "/signFile");
-    $forms = $(namespace + ' form');
-
-    if (!$forms.length) {
-      return;
-    }
-
-    $forms.each(build);
-  }
-
   function build(i, el) {
     // Store form state using namespace
     var $el = $(el);
