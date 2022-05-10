@@ -144,6 +144,7 @@ figcaption {
 .section {
   margin-right: 30px;
   margin-left: 30px;
+  text-align: center;
 }
 
 .section.cc-cta {
@@ -667,6 +668,7 @@ figcaption {
 }
 
 .contact-form-grid {
+  display: block;
   margin-top: 100px;
   margin-bottom: 100px;
   -webkit-box-align: start;
@@ -1802,15 +1804,15 @@ figcaption {
   grid-row-end: 2;
 }
 
-#w-node-ae000b61-a8e2-97a3-af95-2ecc4b3fe02d-103f288d {
-  -ms-grid-column: 1;
-  grid-column-start: 1;
+#w-node-ae000b61-a8e2-97a3-af95-2ecc4b3fe046-103f288d {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
   -ms-grid-column-span: 1;
-  grid-column-end: 2;
-  -ms-grid-row: 1;
-  grid-row-start: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
   -ms-grid-row-span: 1;
-  grid-row-end: 2;
+  grid-row-end: span 1;
 }
 
 #w-node-ae000b61-a8e2-97a3-af95-2ecc4b3fe045-103f288d {
